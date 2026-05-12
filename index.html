@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Figtree">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: black; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color:  hsl(47, 88%, 63%);
+      font-family: 'Figtree', sans-serif;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      width: 23rem;
+      
+      padding: 1.5rem;
+      border-radius: 20px;
+      border: 1px solid hsl(0, 0%, 0%);
+      box-shadow: 10px 10px;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .button {
+      background-color: hsl(47, 88%, 63%);
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    .button:hover {
+      background-color: hsl(47, 88%, 53%);
+      cursor: pointer;
+    }
+
+    #date {
+      margin-top: 1rem;
+      color: hsl(0, 0%, 7%);
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    #title {
+      color: hsl(0, 0%, 7%);
+      margin-top: 0.5rem;
+      font-size: 26px;
+    }
+
+    #description {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      color: hsl(0, 0%, 42%);
+      letter-spacing: 1px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    .user p {
+      font-size: 16px;
+      color: hsl(0, 0%, 7%);
+      font-weight: 800;
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <picture class="image">
+      <img src="assets/images/illustration-article.svg" alt="Illustration of an article">
+    </picture>
+
+   <button class="button">Learning</button>
+
+   <p id="date">Published 21 Dec 2023</p>
+
+   <h1 id="title">HTML & CSS foundations</h1>
+
+   <p id="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+   <div class="user">
+      <picture class="avatar">
+        <img src="assets/images/image-avatar.webp" alt="Image of user">
+      </picture>
+      <p>Greg Hooper</p>
+   </div>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JuanPaiva0">JuanPaiva0</a>.
+  </footer>
+</body>
+</html>
